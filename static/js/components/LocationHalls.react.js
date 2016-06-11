@@ -5,7 +5,6 @@ var DiningHall = require('./DiningHalls.react');
 var $ = require('jquery');
 
 var LocationHalls = React.createClass ({
-
   render: function() {
     var _this = this;
     var halls = this.props.eaterydata.map(function(hall) {
@@ -14,9 +13,9 @@ var LocationHalls = React.createClass ({
       );
     }.bind(this));
 
-    var divID = "locationDivs".concat(this.props.location)
+    var divID = "location-".concat(this.props.location)
     return (
-      <div className="locationDivs" id={divID}>
+      <div className="location" id={divID}>
         {halls}
       </div>
     );

@@ -4,25 +4,27 @@ var React = require('react');
 var Menu = require('./Menus.react');
 var $ = require('jquery');
 
-var defaultMenu = {
-  "descr": "N/A",
-  "start": "N/A",
-  "food_items": [],
-  "open_hours": "N/A"
-}
-
 var DiningHall = React.createClass({
+  nameToID: function(name) {
+    return name
+      .replace(/\s+/g, '')
+      .replace('!', '')
+      .replace("\'", '')
+      .replace("&", '')
+      .concat("-wrapper");
+  },
 
   onClick: function(hall_name) {
-    var divID = '#'.concat(hall_name.replace(/\s+/g, '').replace('!', '').replace("\'", '').replace("&", '').concat("Wrapper"));
+    console.log("clicking");
+    var divID = "#" + this.nameToID(hall_name);
     $(divID).slideToggle(200);
   },
 
   render: function() {
     var _this = this;
     var hall_name = this.props.data.name;
-    var hall_name_class = "hallnameDiv " + this.props.data.status;
-    var hall_name_id = hall_name.replace(/\s+/g, '').replace('!', '').replace("\'", '').replace("&", '').concat("Wrapper");
+    var hall_name_class = "hall-name " + this.props.data.status;
+    var hall_name_id = this.nameToID(hall_name);
     var peak = this.props.data.peak;
     var currentDate = (new Date()).toISOString().slice(0, 10);    
 
@@ -31,7 +33,7 @@ var DiningHall = React.createClass({
         if (day.events.length == 0) {
           return (
             <p>
-              There is no menu information for today.
+              This location is not open today.
             </p>
           )
         }
@@ -44,11 +46,11 @@ var DiningHall = React.createClass({
     });
 
     return (
-      <div className="dininghallDiv">
+      <div className="eatery-wrapper">
         <div className={hall_name_class} onClick={_this.onClick.bind(_this, hall_name)}>
           {hall_name} (peak: {peak})
         </div>
-        <div className="menuDivWrapper" id={hall_name_id}>
+        <div className="menu-wrapper" id={hall_name_id}>
           {menus}
         </div>
       </div>

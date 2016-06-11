@@ -54,16 +54,16 @@ ul li a.nav:hover {
   text-align: center;
   webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
 }
-.alllocationDiv {
+.all-location {
   background-color: white;
   border-collapse: collapse;
   max-width: 100vh;
 }
-.locationDivs {
+.location {
   display: none;
   max-width: 100vh;
 }
-.campusDiv {
+.campus {
   border: 1px solid #BD0000;
   border-collapse: collapse;
   box-shadow: 1px 2px 3px rgba(0,0,0,.5);
@@ -72,10 +72,10 @@ ul li a.nav:hover {
   moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
 }
-.campusDiv:not(:first-child) {
+.campus:not(:first-child) {
   margin-top: 10px;
 }
-.menuDiv {
+.menu {
   background-color: white;
   color: black;
   font-size: 15px;
@@ -83,15 +83,15 @@ ul li a.nav:hover {
   max-width: 100vh;
   text-align: center;
 }
-.menuDivWrapper {
+.menu-wrapper {
   display: none;
 }
-.dininghallDiv {
+.eatery-wrapper {
   background-color: white;
   color: black;
   max-width: 100vh;
 }
-.hallnameDiv {
+.hall-name {
   background-color: white;
   border: 1px solid #BD0000;
   border-collapse: collapse;
@@ -105,15 +105,15 @@ ul li a.nav:hover {
   webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   cursor: pointer;
 }
-.hallnameDiv:hover {
+.hall-name:hover {
   background-color: #E6E6E6;
 }
-.menuperiod {
+.menu-period {
   border: 1px solid #BD0000;
   border-collapse: collapse;
   font-size: 18px;
 }
-.locationheaderDiv {
+.location-header {
   background-color: #ffcccc;
   background-repeat: no-repeat;
   background-size: 145px;
@@ -125,15 +125,10 @@ ul li a.nav:hover {
   text-align: center; 
   cursor: pointer;
 }
-.locationheaderDiv:hover {
+.location-header:hover {
   background-color: #E6E6E6;
 }
-.dividerspan {
-  color: #BD0000;
-  font-size: 20px;
-  font-style: bold;
-}
-#welcomeDiv {
+#welcome-div {
   background-color: white;
   border: 1px solid #BD0000;
   border-collapse: collapse;
@@ -148,22 +143,6 @@ ul li a.nav:hover {
   moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   text-align: center;
   webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
-}
-#bottomDiv {
-  border: 1px solid #BD0000;
-  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
-  color: black;
-  font-size: 13px;
-  height: 25px;
-  line-height: 25px;
-  margin: auto;
-  margin-top: 10px;
-  max-width: 100vh;
-  moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
-  webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
-}
-#bottomDiv a {
-  color: black;
 }
 img {
   height: 45px;

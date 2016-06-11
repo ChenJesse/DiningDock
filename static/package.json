@@ -15,13 +15,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ChenJesse/diningAppV2.git"
+    "url": "git+https://github.com/ChenJesse/diningDock.git"
   },
   "author": "",
   "bugs": {
-    "url": "https://github.com/ChenJesse/diningAppV2/issues"
+    "url": "https://github.com/ChenJesse/diningDock/issues"
   },
-  "homepage": "https://github.com/ChenJesse/diningAppV2#readme",
+  "homepage": "https://github.com/ChenJesse/diningDock#readme",
   "dependencies": {
     "flux": "^2.0.3",
     "react": "^0.13.3"
@@ -31,6 +31,7 @@
     "envify": "^3.4.0",
     "reactify": "^1.1.1",
     "uglify-js": "^2.4.23",
-    "watchify": "^3.2.3"
+    "watchify": "^3.2.3",
+    "jquery"  : "^1.5.1"
   }
 }

@@ -8,7 +8,7 @@ var Menu= React.createClass({
     if (menu.length == 0) {
       return (
         <p>
-          There is no menu information for today.
+          Sorry, menu information is unavailable.
         </p>
       )
     } 
@@ -30,11 +30,11 @@ var Menu= React.createClass({
     var _this = this;
     var event = this.props.data;
     return (
-      <div className="menuDiv">
-        <p className="menuperiod">
+      <div className="menu">
+        <p className="menu-period">
           {event.descr} | {event.start} - {event.end}
         </p>
-        <p className="fooditems">
+        <p className="food-items">
           {(this.processFood(event.menu))}
         </p>
       </div>
