@@ -1,0 +1,1 @@
+var AllHalls = require('./components/AllHalls.react')

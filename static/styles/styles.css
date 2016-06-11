@@ -1,0 +1,177 @@
+* {
+  font-family: Helvetica;
+  font-weight: 100;
+  webkit-font-smoothing: antialiased;
+}
+div {
+  border-radius: 2px;
+  text-align: center;
+  width: 100%;
+}
+html, body {
+  padding: 0;
+}
+.navbar {
+  background-color: white;
+  border-bottom: 1px solid black;
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 10px;
+  moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  width: 100%;
+}
+div#navbar-header {
+  display: inline-block;
+  font-size: 20px;
+  margin: 0px;
+}
+div#navbar-header img {
+  vertical-align: middle;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+ul li a.nav {
+  color: #222322;
+  color: black;
+  padding-left: 7px;
+  text-decoration: none;
+}
+ul li a.nav:hover {
+  text-decoration: underline;
+}
+#menus {
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  margin: auto;
+  margin-top: 10px;
+  max-width: 100vh;
+  moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  text-align: center;
+  webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}
+.alllocationDiv {
+  background-color: white;
+  border-collapse: collapse;
+  max-width: 100vh;
+}
+.locationDivs {
+  display: none;
+  max-width: 100vh;
+}
+.campusDiv {
+  border: 1px solid #BD0000;
+  border-collapse: collapse;
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  margin: auto;
+  max-width: 100vh;
+  moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}
+.campusDiv:not(:first-child) {
+  margin-top: 10px;
+}
+.menuDiv {
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  margin: auto;
+  max-width: 100vh;
+  text-align: center;
+}
+.menuDivWrapper {
+  display: none;
+}
+.dininghallDiv {
+  background-color: white;
+  color: black;
+  max-width: 100vh;
+}
+.hallnameDiv {
+  background-color: white;
+  border: 1px solid #BD0000;
+  border-collapse: collapse;
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  color: black;
+  font-size: 20px;
+  max-width: 100vh;
+  moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  padding-bottom: 10px;
+  padding-top: 10px;
+  webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  cursor: pointer;
+}
+.hallnameDiv:hover {
+  background-color: #E6E6E6;
+}
+.menuperiod {
+  border: 1px solid #BD0000;
+  border-collapse: collapse;
+  font-size: 18px;
+}
+.locationheaderDiv {
+  background-color: #ffcccc;
+  background-repeat: no-repeat;
+  background-size: 145px;
+  color: black;
+  font-size: 25px;
+  max-width: 100vh;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  text-align: center; 
+  cursor: pointer;
+}
+.locationheaderDiv:hover {
+  background-color: #E6E6E6;
+}
+.dividerspan {
+  color: #BD0000;
+  font-size: 20px;
+  font-style: bold;
+}
+#welcomeDiv {
+  background-color: white;
+  border: 1px solid #BD0000;
+  border-collapse: collapse;
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  color: black;
+  font-size: 20px;
+  height: auto;
+  line-height: 30px;
+  margin: auto;
+  margin-top: 5px;
+  max-width: 100vh;
+  moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  text-align: center;
+  webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}
+#bottomDiv {
+  border: 1px solid #BD0000;
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  color: black;
+  font-size: 13px;
+  height: 25px;
+  line-height: 25px;
+  margin: auto;
+  margin-top: 10px;
+  max-width: 100vh;
+  moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}
+#bottomDiv a {
+  color: black;
+}
+img {
+  height: 45px;
+  width: 45px;
+}
+.closed {
+  background-color: #ffe6e6;
+}
+.open {
+  background-color: #99ff99;
+}
