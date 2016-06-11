@@ -4,7 +4,7 @@ var React = require('react');
 var Menu = require('./Menus.react');
 var $ = require('jquery');
 
-var DiningHall = React.createClass({
+var Eatery = React.createClass({
   nameToID: function(name) {
     return name
       .replace(/\s+/g, '')
@@ -14,17 +14,16 @@ var DiningHall = React.createClass({
       .concat("-wrapper");
   },
 
-  onClick: function(hall_name) {
-    console.log("clicking");
-    var divID = "#" + this.nameToID(hall_name);
+  onClick: function(name) {
+    var divID = "#" + this.nameToID(name);
     $(divID).slideToggle(200);
   },
 
   render: function() {
     var _this = this;
-    var hall_name = this.props.data.name;
-    var hall_name_class = "hall-name " + this.props.data.status;
-    var hall_name_id = this.nameToID(hall_name);
+    var name = this.props.data.name;
+    var nameClass = "name " + this.props.data.status;
+    var nameID = this.nameToID(name);
     var peak = this.props.data.peak;
     var currentDate = (new Date()).toISOString().slice(0, 10);    
 
@@ -47,10 +46,10 @@ var DiningHall = React.createClass({
 
     return (
       <div className="eatery-wrapper">
-        <div className={hall_name_class} onClick={_this.onClick.bind(_this, hall_name)}>
-          {hall_name} (peak: {peak})
+        <div className={nameClass} onClick={_this.onClick.bind(_this, name)}>
+          {name} (peak: {peak})
         </div>
-        <div className="menu-wrapper" id={hall_name_id}>
+        <div className="menu-wrapper" id={nameID}>
           {menus}
         </div>
       </div>
@@ -58,4 +57,4 @@ var DiningHall = React.createClass({
   }
 });
 
-module.exports = DiningHall;
+module.exports = Eatery;

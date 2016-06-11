@@ -32,7 +32,7 @@ var Menu= React.createClass({
     return (
       <div className="menu">
         <p className="menu-period">
-          {event.descr} | {event.start} - {event.end}
+          {event.descr == "" ? "N/A" : event.descr} | {event.start} - {event.end}
         </p>
         <p className="food-items">
           {(this.processFood(event.menu))}

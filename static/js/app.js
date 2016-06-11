@@ -1,1 +1,1 @@
-var AllHalls = require('./components/AllHalls.react')
+var AllEateries = require('./components/AllEateries.react')

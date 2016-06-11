@@ -91,7 +91,7 @@ ul li a.nav:hover {
   color: black;
   max-width: 100vh;
 }
-.hall-name {
+.name {
   background-color: white;
   border: 1px solid #BD0000;
   border-collapse: collapse;
@@ -105,7 +105,7 @@ ul li a.nav:hover {
   webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   cursor: pointer;
 }
-.hall-name:hover {
+.name:hover {
   background-color: #E6E6E6;
 }
 .menu-period {

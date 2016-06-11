@@ -1,7 +1,7 @@
    /** @jsx React.DOM */
 
 var React = require('react');
-var LocationHalls = require('./LocationHalls.react');
+var LocationEateries = require('./LocationEateries.react');
 var $ = require('jquery');
 
 var unwanted = {
@@ -10,7 +10,7 @@ var unwanted = {
   "Cornell Dairy Bar": true                  
 }
 
-var AllHalls = React.createClass ({
+var AllEateries = React.createClass ({
   parseJSON: function() {
     var eateries = $.grep(this.state.eaterydata.data.eateries, function(e) {
       return !(e.name in unwanted); 
@@ -87,19 +87,19 @@ var AllHalls = React.createClass ({
           <div className="location-header" id="location-header-north" onClick={_this.onClick.bind(_this, 'north')}> 
             <th className="campus-location">North Campus <div className="cornelllogo"></div></th>
           </div>
-          <LocationHalls eaterydata={nestedEateries[0]} location='north' />
+          <LocationEateries eaterydata={nestedEateries[0]} location='north' />
         </div>
         <div className="campus" id="central">
           <div className="location-header" id="location-header-central" onClick={_this.onClick.bind(_this, 'central')}>
             <th className="campus-location">Central Campus <div className="cornelllogo"></div></th>
           </div>
-          <LocationHalls eaterydata={nestedEateries[1]} location='central' />
+          <LocationEateries eaterydata={nestedEateries[1]} location='central' />
         </div>
         <div className="campus" id="west">
           <div className="location-header" id="location-header-west" onClick={_this.onClick.bind(_this, 'west')}>
             <th className="campus-location">West Campus <div className="cornelllogo"></div></th>
           </div>
-          <LocationHalls eaterydata={nestedEateries[2]} location='west' />
+          <LocationEateries eaterydata={nestedEateries[2]} location='west' />
         </div>
       </div>
     )
@@ -107,8 +107,8 @@ var AllHalls = React.createClass ({
 });
 
 React.render(
-  <AllHalls eateryurl="https://now.dining.cornell.edu/api/1.0/dining/eateries.json" trafficurl="http://cornellpulse.com:3000/api"/>,
+  <AllEateries eateryurl="https://now.dining.cornell.edu/api/1.0/dining/eateries.json" trafficurl="http://cornellpulse.com:3000/api"/>,
   document.getElementById("menus")
 );
 
-module.exports = AllHalls;
+module.exports = AllEateries;
