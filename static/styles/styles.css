@@ -46,13 +46,13 @@ ul li a.nav:hover {
   text-decoration: underline;
 }
 #menus {
-  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  /*box-shadow: 1px 2px 3px rgba(0,0,0,.5);*/
   margin: auto;
   margin-top: 10px;
   max-width: 100vh;
-  moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  /*moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);*/
   text-align: center;
-  webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  /*webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);*/
 }
 .all-location {
   background-color: white;
@@ -115,8 +115,6 @@ ul li a.nav:hover {
 }
 .location-header {
   background-color: #ffcccc;
-  background-repeat: no-repeat;
-  background-size: 145px;
   color: black;
   font-size: 25px;
   max-width: 100vh;
@@ -154,3 +152,8 @@ img {
 .open {
   background-color: #99ff99;
 }
+.loader {
+  position: relative;
+  top: 100px;
+}
+

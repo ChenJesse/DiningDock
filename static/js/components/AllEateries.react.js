@@ -1,8 +1,10 @@
    /** @jsx React.DOM */
 
 var React = require('react');
+var ReactDOM = require('react-dom');
 var LocationEateries = require('./LocationEateries.react');
 var $ = require('jquery');
+var Loader = require('react-loader');
 
 var unwanted = {
   "Hot Dog Cart": true, 
@@ -31,6 +33,7 @@ var AllEateries = React.createClass ({
 
   getInitialState: function(){
     return {
+      loaded: false,
       eaterydata: [],
       trafficdata: [],
     };
@@ -56,7 +59,7 @@ var AllEateries = React.createClass ({
       dataType: 'json',
       cache: false,
       success: function(data) {
-        this.setState({eaterydata: data});
+        this.setState({eaterydata: data, loaded: true});
       }.bind(this),
       error: function(xhr, status, err) {
         console.error(this.props.url, status, err.toString());
@@ -76,28 +79,31 @@ var AllEateries = React.createClass ({
   },
 
   render: function() {
-    if (this.state.eaterydata.length == 0) {
-      return (<div></div>);
-    }
     var _this = this;
+    var options = {scale: 0.75, lines: 7}
+
+    if (this.state.eaterydata.length == 0) {
+      return (<Loader id="spinner" loaded={this.state.loaded} options={options}></Loader>);
+    }
+
     var nestedEateries = this.parseJSON();
     return (
       <div className="all-location">
         <div className="campus" id="north">
           <div className="location-header" id="location-header-north" onClick={_this.onClick.bind(_this, 'north')}> 
-            <th className="campus-location">North Campus <div className="cornelllogo"></div></th>
+            <div className="campus-location">North Campus</div>
           </div>
           <LocationEateries eaterydata={nestedEateries[0]} location='north' />
         </div>
         <div className="campus" id="central">
           <div className="location-header" id="location-header-central" onClick={_this.onClick.bind(_this, 'central')}>
-            <th className="campus-location">Central Campus <div className="cornelllogo"></div></th>
+            <div className="campus-location">Central Campus</div>
           </div>
           <LocationEateries eaterydata={nestedEateries[1]} location='central' />
         </div>
         <div className="campus" id="west">
           <div className="location-header" id="location-header-west" onClick={_this.onClick.bind(_this, 'west')}>
-            <th className="campus-location">West Campus <div className="cornelllogo"></div></th>
+            <div className="campus-location">West Campus </div>
           </div>
           <LocationEateries eaterydata={nestedEateries[2]} location='west' />
         </div>
@@ -106,7 +112,7 @@ var AllEateries = React.createClass ({
   }
 });
 
-React.render(
+ReactDOM.render(
   <AllEateries eateryurl="https://now.dining.cornell.edu/api/1.0/dining/eateries.json" trafficurl="http://cornellpulse.com:3000/api"/>,
   document.getElementById("menus")
 );
