@@ -1,6 +1,6 @@
 ## DiningDock ##
 
-<img src=screenshots/holistic-ss.png>
+<img src=screenshots/holistic-ss2.png>
 <br><br>
 <p align=center>
 <img src=screenshots/mobile-center.png width=275 height=580 align=center>
