@@ -14,13 +14,11 @@ html, body {
 .navbar {
   background-color: white;
   border-bottom: 1px solid black;
-  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   height: 50px;
   line-height: 50px;
   margin-bottom: 10px;
-  moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
-  webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   width: 100%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 div#navbar-header {
   display: inline-block;
@@ -46,13 +44,9 @@ ul li a.nav:hover {
   text-decoration: underline;
 }
 #menus {
-  /*box-shadow: 1px 2px 3px rgba(0,0,0,.5);*/
   margin: auto;
-  margin-top: 10px;
   max-width: 100vh;
-  /*moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);*/
   text-align: center;
-  /*webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);*/
 }
 .all-location {
   background-color: white;
@@ -64,16 +58,18 @@ ul li a.nav:hover {
   max-width: 100vh;
 }
 .campus {
-  border: 1px solid #BD0000;
-  border-collapse: collapse;
-  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   margin: auto;
+  margin-top: 10px;
   max-width: 100vh;
-  moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
-  webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  border: 1px solid #BD0000;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 .campus:not(:first-child) {
   margin-top: 10px;
+}
+.campus:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 .menu {
   background-color: white;
@@ -90,28 +86,27 @@ ul li a.nav:hover {
   background-color: white;
   color: black;
   max-width: 100vh;
+  border-top: 1px solid #BD0000;  
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 .name {
   background-color: white;
-  border: 1px solid #BD0000;
-  border-collapse: collapse;
-  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   color: black;
   font-size: 20px;
   max-width: 100vh;
-  moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   padding-bottom: 10px;
   padding-top: 10px;
-  webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);  
 }
 .name:hover {
-  background-color: #E6E6E6;
+  box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+  /*background-color: #E6E6E6;*/
 }
 .menu-period {
-  border: 1px solid #BD0000;
-  border-collapse: collapse;
   font-size: 18px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 .location-header {
   background-color: #ffcccc;
@@ -124,13 +119,12 @@ ul li a.nav:hover {
   cursor: pointer;
 }
 .location-header:hover {
-  background-color: #E6E6E6;
-}
+/*  background-color: #E6E6E6;
+*/}
 #welcome-div {
   background-color: white;
   border: 1px solid #BD0000;
   border-collapse: collapse;
-  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   color: black;
   font-size: 20px;
   height: auto;
@@ -138,9 +132,8 @@ ul li a.nav:hover {
   margin: auto;
   margin-top: 5px;
   max-width: 100vh;
-  moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
   text-align: center;
-  webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 img {
   height: 45px;
