@@ -113,7 +113,7 @@ var AllEateries = React.createClass ({
 });
 
 ReactDOM.render(
-  <AllEateries eateryurl="https://now.dining.cornell.edu/api/1.0/dining/eateries.json" trafficurl="http://cornellpulse.com:3000/test"/>,
+  <AllEateries eateryurl="https://now.dining.cornell.edu/api/1.0/dining/eateries.json" trafficurl="http://cornellpulse.com:3000/api"/>,
   document.getElementById("menus")
 );
 
