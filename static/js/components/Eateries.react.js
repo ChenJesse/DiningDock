@@ -24,7 +24,7 @@ var Eatery = React.createClass({
     var name = this.props.data.name;
     var nameClass = "name " + this.props.data.status;
     var nameID = this.nameToID(name);
-    var peak = this.props.data.peak;
+    var peak = this.props.data.surgePeak;
     var currentDate = (new Date()).toISOString().slice(0, 10);    
 
     var menus = this.props.data.operatingHours.map(function(day) {
@@ -47,7 +47,7 @@ var Eatery = React.createClass({
     return (
       <div className="eatery-wrapper">
         <div className={nameClass} onClick={_this.onClick.bind(_this, name)}>
-          {name} (peak: {peak})
+          {name} (Traffic: {peak})
         </div>
         <div className="menu-wrapper" id={nameID}>
           {menus}
