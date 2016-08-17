@@ -3,7 +3,7 @@
 <img src=screenshots/desktop-ss.png>
 <br><br>
 <p align=center>
-<img src=screenshots/mobile-ss.png width=275 height=580 align=center>
+<img src=screenshots/mobile-ss.png width=300 height=560 align=center>
 </p>
 
 
