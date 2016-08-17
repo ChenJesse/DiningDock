@@ -1,9 +1,9 @@
-## DiningDock ##
+## <a href=http://chenjesse.github.io/DiningDock/>DiningDock </a>
 
-<img src=screenshots/holistic-ss2.png>
+<img src=screenshots/desktop-ss.png>
 <br><br>
 <p align=center>
-<img src=screenshots/mobile-center.png width=275 height=580 align=center>
+<img src=screenshots/mobile-ss.png width=275 height=580 align=center>
 </p>
 
 
