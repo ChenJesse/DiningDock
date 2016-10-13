@@ -99,13 +99,13 @@ var AllEateries = React.createClass ({
           <div className="location-header" id="location-header-central" onClick={_this.onClick.bind(_this, 'central')}>
             <div className="campus-location">Central Campus</div>
           </div>
-          <LocationEateries eaterydata={nestedEateries[1]} location='central' />
+          <LocationEateries eaterydata={nestedEateries[2]} location='central' />
         </div>
         <div className="campus" id="west">
           <div className="location-header" id="location-header-west" onClick={_this.onClick.bind(_this, 'west')}>
             <div className="campus-location">West Campus </div>
           </div>
-          <LocationEateries eaterydata={nestedEateries[2]} location='west' />
+          <LocationEateries eaterydata={nestedEateries[1]} location='west' />
         </div>
       </div>
     )
